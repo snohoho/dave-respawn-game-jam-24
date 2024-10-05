@@ -1,7 +1,6 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using static VoiceLineCatalog;
 
 public class AudioManager : MonoBehaviour
 {
@@ -29,29 +28,24 @@ public class AudioManager : MonoBehaviour
 #if UNITY_EDITOR
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
-            PlayVoiceLine(VoiceLineCatalog.TestAudio);
+            PlayVoiceLine(VoiceLineName.TestAudio);
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
-            PlayVoiceLine(VoiceLineCatalog.TestAudio2);
+            PlayVoiceLine(VoiceLineName.TestAudio2);
 
 #endif
 
     }
 
-    public void PlayVoiceLine(int index)
+    public void PlayVoiceLine(VoiceLineName voiceLine)
     {
-        // This guy prevents overlapping multiple sounds
-        _soundPlayer.clip = _voiceLineCatalog.GetAudioClip(index);
+        _soundPlayer.clip = _voiceLineCatalog.GetAudioClip(voiceLine);
         _soundPlayer.Play();
-
-        // This guy doesn't care and you can have as many sounds overlapping as you want
-        //_soundPlayer.PlayOneShot(_voiceLineCatalog.GetAudioClip(index));
     }
 
     public void PlaySound(int index)
     {
         throw new NotImplementedException();
-        //_soundPlayer.PlayOneShot(_voiceLineCatalog.GetAudioClip(index));
     }
 
     public void PlayMusic(int index)

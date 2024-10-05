@@ -7,7 +7,7 @@ public class AlexTest : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        AudioManager.Default.PlayVoiceLine(VoiceLineCatalog.TestAudio);
+        //AudioManager.Default.PlayVoiceLine(VoiceLineCatalog.TestAudio);
     }
 
     // Update is called once per frame
