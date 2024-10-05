@@ -2,13 +2,13 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
-/gamejam2024/[Ll]ibrary/
-/gamejam2024/[Tt]emp/
-/gamejam2024/[Oo]bj/
-/gamejam2024/[Bb]uild/
-/gamejam2024/[Bb]uilds/
-/gamejam2024/[Ll]ogs/
-/gamejam2024/[Uu]ser[Ss]ettings/
+gamejam2024/Library/
+gamejam2024/Temp/
+gamejam2024/Obj/
+gamejam2024/Build/
+gamejam2024/Builds/
+gamejam2024/Logs/
+gamejam2024/UserSettings/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
