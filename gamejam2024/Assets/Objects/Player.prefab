@@ -1003,7 +1003,7 @@ Transform:
   m_GameObject: {fileID: 2770359962913108856}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.46, z: 0.54}
+  m_LocalPosition: {x: 0, y: 0.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1359,6 +1359,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueMenu: {fileID: 159660178202585715}
   settingsMenu: {fileID: 7402664968868616264}
+  mainMenu: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &4616571397296337941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1634,10 +1636,10 @@ GameObject:
   - component: {fileID: 95584118642840475}
   - component: {fileID: 7786586342433323390}
   - component: {fileID: 7260630637766462160}
-  - component: {fileID: 2982756597607437193}
   - component: {fileID: 639906815235561949}
   - component: {fileID: 2708795950228867312}
   - component: {fileID: 2140612084895457347}
+  - component: {fileID: 2086671372824381151}
   - component: {fileID: 1374725113433638387}
   m_Layer: 0
   m_Name: Player
@@ -1715,27 +1717,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2982756597607437193
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4193253637427714098}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 2, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &639906815235561949
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1915,6 +1896,30 @@ MonoBehaviour:
   sensSlider: {fileID: 8170507012104008501}
   speed: 300
   jumpHeight: 10
+  inMainMenu: 0
+--- !u!136 &2086671372824381151
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4193253637427714098}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1374725113433638387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1928,6 +1933,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  daveEmotion: {fileID: 0}
+  daveHappy: {fileID: 0}
+  daveNeutral: {fileID: 0}
+  daveSad: {fileID: 0}
+  trustLevel: 0
 --- !u!1 &4817619413355726996
 GameObject:
   m_ObjectHideFlags: 0
