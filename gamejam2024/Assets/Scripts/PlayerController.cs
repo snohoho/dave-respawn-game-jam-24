@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jumpHeight = 10f;
     private Vector2 moveInput;
     private bool isJumping;
+    private bool canJump;
 
     //camera stuff
     private float camSensitivity = 0.15f;
@@ -38,6 +39,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
 
         isJumping = false;
+        canJump = true;
 
         //camera handling
         camX = cam.transform.localRotation.eulerAngles.x;
@@ -73,9 +75,9 @@ public class PlayerController : MonoBehaviour
         rb.velocity = transform.TransformVector(new Vector3(moveInput.x * speed * Time.deltaTime, 
                                 rb.velocity.y, 
                                 moveInput.y * speed * Time.deltaTime));
-        if(isJumping) {
+        if(isJumping && canJump) {
             rb.velocity += new Vector3(0,jumpHeight,0);
-            isJumping = false;
+            canJump = false;
         }
     }
 
@@ -98,8 +100,13 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        if(context.started || context.performed) {
+        if(context.started || context.performed && canJump) {
             isJumping = true;
+        }
+        
+        if (context.canceled)
+        {
+            isJumping = false;
         }
     }
 
@@ -181,5 +188,26 @@ public class PlayerController : MonoBehaviour
 
     public void LeaveMM() {
         inMainMenu = false;
+    }
+
+    public void OnTriggerEnter(Collider other) {
+        if(other.gameObject.tag == "EndTrigger") {
+            inMainMenu = true;
+            rb.velocity = Vector2.zero;
+            moveInput = Vector2.zero;
+        }
+    }
+
+    public void OnCollisionEnter(Collision other) {
+        if(other.gameObject.tag == "Ground") {
+            canJump = true;
+        }
+    }
+
+    public void OnCollisionExit(Collision other) {
+        if(other.gameObject.tag == "Ground") {
+            canJump = false;
+            isJumping = true;
+        }
     }
 }

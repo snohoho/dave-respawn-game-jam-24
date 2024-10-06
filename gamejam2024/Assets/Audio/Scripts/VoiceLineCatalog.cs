@@ -35,7 +35,9 @@ public class VoiceLineCatalog : ScriptableObject
         Bad_ending = 25,
         Sewer_entrance_near_building_with_first_elevator = 26,
         Turning_around_going_home = 27,
-        Arriving_home = 28
+        Arriving_home = 28,
+        Kinda_fed_up = 29,
+        Completely_fed_up = 30
 
     }
 

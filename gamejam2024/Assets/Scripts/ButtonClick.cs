@@ -35,6 +35,7 @@ public class ButtonClick : MonoBehaviour
 
     public void mainToDialogue() {
         player.GetComponent<PlayerController>().LeaveMM();
+        AudioManager.Default.PlayVoiceLine(VoiceLineCatalog.VoiceLineName.Game_Start);
 
         mainMenu.SetActive(false);
         dialogueMenu.SetActive(true);
