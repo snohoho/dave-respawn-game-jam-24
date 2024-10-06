@@ -8,14 +8,16 @@ public class VoiceLineTrigger : MonoBehaviour
 {
     private bool _isTriggered = false;
     [SerializeField] private VoiceLineName _selectedVoiceLine;
+    [SerializeField] private int trust;
 
     private void OnTriggerEnter(Collider other)
     {
-        // TODO: Define what is considered colliding with the player
-        if (false && !_isTriggered)
+        if (!_isTriggered && other.gameObject.tag == "Player")
         {
             _isTriggered = true;
             AudioManager.Default.PlayVoiceLine(_selectedVoiceLine);
+            var trustController = other.gameObject.GetComponent<TrustController>();
+            trustController.trustAddRemove(trust);
         }
     }
 }

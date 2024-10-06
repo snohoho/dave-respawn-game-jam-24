@@ -18,4 +18,8 @@ public class TrustController : MonoBehaviour
     {
         
     }
+
+    public void trustAddRemove(int trust) {
+        trustLevel += trust;
+    }
 }
