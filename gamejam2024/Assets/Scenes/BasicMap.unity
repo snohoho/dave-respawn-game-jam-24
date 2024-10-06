@@ -9716,7 +9716,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b0400a9ddb292547ad2b4ca0146e0e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _selectedVoiceLine: 11
+  _selectedVoiceLine: 32
   trust: 0
 --- !u!65 &550102886
 BoxCollider:
@@ -18056,6 +18056,10 @@ PrefabInstance:
       propertyPath: textmesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4423743058252967447, guid: 59a85d4ce8f6d1948b17e664450386cd, type: 3}
+      propertyPath: _selectedVoiceLine
+      value: 31
+      objectReference: {fileID: 0}
     - target: {fileID: 4669541677316158036, guid: 59a85d4ce8f6d1948b17e664450386cd, type: 3}
       propertyPath: m_Name
       value: parkourEnd
@@ -18092,6 +18096,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: firstSewer
       objectReference: {fileID: 0}
+    - target: {fileID: 5715679768993875623, guid: 59a85d4ce8f6d1948b17e664450386cd, type: 3}
+      propertyPath: m_Name
+      value: HELLZONE
+      objectReference: {fileID: 0}
+    - target: {fileID: 5715679768993875623, guid: 59a85d4ce8f6d1948b17e664450386cd, type: 3}
+      propertyPath: m_TagString
+      value: HellzoneEnd
+      objectReference: {fileID: 0}
     - target: {fileID: 5772985602598936060, guid: 59a85d4ce8f6d1948b17e664450386cd, type: 3}
       propertyPath: textmesh
       value: 
@@ -18099,6 +18111,10 @@ PrefabInstance:
     - target: {fileID: 6302999988081775375, guid: 59a85d4ce8f6d1948b17e664450386cd, type: 3}
       propertyPath: textmesh
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6305227816772420549, guid: 59a85d4ce8f6d1948b17e664450386cd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 6544271073256238158, guid: 59a85d4ce8f6d1948b17e664450386cd, type: 3}
       propertyPath: m_LocalScale.z
@@ -18135,6 +18151,10 @@ PrefabInstance:
     - target: {fileID: 7211938914298972184, guid: 59a85d4ce8f6d1948b17e664450386cd, type: 3}
       propertyPath: m_Name
       value: mcodnald
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211938914298972184, guid: 59a85d4ce8f6d1948b17e664450386cd, type: 3}
+      propertyPath: m_TagString
+      value: McodnaldsEnd
       objectReference: {fileID: 0}
     - target: {fileID: 8322295490864256969, guid: 59a85d4ce8f6d1948b17e664450386cd, type: 3}
       propertyPath: textmesh
@@ -30733,7 +30753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 026b0e4aa9193624ca327fe41d4114ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeTrigger: {fileID: 0}
+  activeTrigger: {fileID: 979662566}
 --- !u!1 &1933300139
 GameObject:
   m_ObjectHideFlags: 0

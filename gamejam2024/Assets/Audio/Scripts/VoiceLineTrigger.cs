@@ -70,7 +70,10 @@ public class VoiceLineTrigger : MonoBehaviour
 
         if(gameObject.tag == "McdonaldsEnd") {
             StartCoroutine(playEndDialogue(VoiceLineName.McDonalds_ending));
-        }  
+        } 
+        if(gameObject.tag == "HellzoneEnd") {
+            StartCoroutine(playEndDialogue(VoiceLineName.Bad_ending));
+        }
 
 
         if (!_isTriggered && other.gameObject.tag == "Player")

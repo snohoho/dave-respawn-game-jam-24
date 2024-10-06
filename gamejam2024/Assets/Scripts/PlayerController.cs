@@ -190,7 +190,7 @@ public class PlayerController : MonoBehaviour
     }
 
     public void OnTriggerEnter(Collider other) {
-        if(other.gameObject.tag == "EndTrigger" || other.gameObject.tag == "McdonaldsEnd" || other.gameObject.tag == "PoolEnd" || other.gameObject.tag == "HouseReturn") {
+        if(other.gameObject.tag == "EndTrigger" || other.gameObject.tag == "McdonaldsEnd" || other.gameObject.tag == "PoolEnd" || other.gameObject.tag == "HouseReturn" || other.gameObject.tag == "HellzoneEnd") {
             Cursor.lockState = CursorLockMode.None;            
             inMainMenu = true;
             isRotating = true;
