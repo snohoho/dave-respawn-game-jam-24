@@ -1,13 +1,5 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Security;
-using TMPro;
-using TMPro.EditorUtilities;
-using Unity.VisualScripting;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using static VoiceLineCatalog;
 

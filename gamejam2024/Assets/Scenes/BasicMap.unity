@@ -30229,7 +30229,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2560695167120043233, guid: 6612f3d090df9fd428c53b109833d941, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: exitGame
+      value: hangUp
       objectReference: {fileID: 0}
     - target: {fileID: 2560695167120043233, guid: 6612f3d090df9fd428c53b109833d941, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
