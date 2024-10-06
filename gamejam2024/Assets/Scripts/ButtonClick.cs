@@ -1,32 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ButtonClick : MonoBehaviour
 {
     [SerializeField] private GameObject dialogueMenu;
     [SerializeField] private GameObject settingsMenu;
     [SerializeField] private GameObject mainMenu;
-
-    private bool inSettings;
-    private bool inDialogue;
+    [SerializeField] private GameObject player;
 
     // Start is called before the first frame update
     void Start()
     {
-        inSettings = false;
-        inDialogue = false;
+
     }
 
     // Update is called once per frame
     void Update()
     {
         
-    }
-
-    public void mainToDialogue() {
-        mainMenu.SetActive(false);
-        dialogueMenu.SetActive(true);
     }
 
     public void dialogueToSettings() {
@@ -39,12 +33,18 @@ public class ButtonClick : MonoBehaviour
         dialogueMenu.SetActive(true);
     }
 
-    public void settingsToMain() {
+    public void mainToDialogue() {
+        player.GetComponent<PlayerController>().LeaveMM();
+
         mainMenu.SetActive(false);
         dialogueMenu.SetActive(true);
     }
 
-    public void exitGame() {
-        Application.Quit();
+    public void restartGame() {
+        SceneManager.LoadScene("BasicMap");
+    }
+
+    public void hangUp() {
+        SceneManager.LoadScene("EndScene");
     }
 }
