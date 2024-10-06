@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class TriggerActivator : MonoBehaviour
 {
-    [SerializeField] public GameObject houseLeaveTrigger;
+    [SerializeField] public GameObject activeTrigger;
 }
