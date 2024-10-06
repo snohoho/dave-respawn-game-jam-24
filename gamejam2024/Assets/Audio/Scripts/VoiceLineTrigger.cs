@@ -16,15 +16,16 @@ public class VoiceLineTrigger : MonoBehaviour
     private bool _isTriggered = false;
     [SerializeField] private VoiceLineName _selectedVoiceLine;
     [SerializeField] private int trust;
-    [SerializeField] private string daveDialogue;
 
-    [SerializeField] private TMP_Text textmesh;
 
     private void OnTriggerEnter(Collider other)
     {
         if(gameObject.tag == "HouseLeave") {
             var homeReturn = gameObject.GetComponent<TriggerActivator>();
-            homeReturn.houseLeaveTrigger.SetActive(true);
+            homeReturn.activeTrigger.SetActive(true);
+            gameObject.SetActive(false);
+
+            return;
         }
 
         //ending triggers dave house
@@ -40,30 +41,51 @@ public class VoiceLineTrigger : MonoBehaviour
             if(trustLevel < -3) {
                 StartCoroutine(playEndDialogue(VoiceLineName.Completely_fed_up));
             }
+        }
 
-            
+        if(gameObject.tag == "ParkourStart") {
+            var parkour = gameObject.GetComponent<TriggerActivator>();
+            parkour.activeTrigger.SetActive(true);
+            gameObject.SetActive(false);
+        }
+    
+        if(gameObject.tag == "ParkourEnd") {
+            var parkour = gameObject.GetComponent<TriggerActivator>();
+            parkour.activeTrigger.SetActive(false);
+            gameObject.SetActive(false);
         }
 
         //end trigger house return
         if(gameObject.tag == "HouseReturn") {
-
+            StartCoroutine(playEndDialogue(VoiceLineName.Arriving_home));
         }
+
+        if(gameObject.tag == "ParkourDie") {
+            SceneManager.LoadScene("EndScene");
+        }
+
+        if(gameObject.tag == "PoolEnd") {
+            StartCoroutine(playEndDialogue(VoiceLineName.Pool_ending));
+        }  
+
+        if(gameObject.tag == "McdonaldsEnd") {
+            StartCoroutine(playEndDialogue(VoiceLineName.McDonalds_ending));
+        }  
+
 
         if (!_isTriggered && other.gameObject.tag == "Player")
         {
             _isTriggered = true;
             AudioManager.Default.PlayVoiceLine(_selectedVoiceLine);
             var trustController = other.gameObject.GetComponent<TrustController>();
-            trustController.trustAddRemove(trust);
-
-            textmesh.text = daveDialogue;   
+            trustController.trustAddRemove(trust); 
         }
     }
 
     IEnumerator playEndDialogue(VoiceLineName voiceline) {
         AudioManager.Default.PlayVoiceLine(voiceline);
 
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(15);
 
         SceneManager.LoadScene("EndScene");
     }
