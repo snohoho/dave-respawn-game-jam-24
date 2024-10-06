@@ -6,6 +6,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -13,7 +14,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Rigidbody rb;
     [SerializeField] private Camera cam;
     [SerializeField] private GameObject phone;
-
+    [SerializeField] private Slider sensSlider;
+    
     //regular movement
     [SerializeField] private float speed = 300f;
     [SerializeField] private float jumpHeight = 10f;
@@ -22,12 +24,14 @@ public class PlayerController : MonoBehaviour
 
     //camera stuff
     private float camSensitivity = 0.15f;
+    private float newCamSensitivity;
     private float camX;
     private bool usingCam;
     private Vector3 initialCamPos;
     private Vector3 initialCamRot;
 
     private bool isRotating;
+    private bool changingSens;
 
     void Start()
     {
@@ -42,6 +46,8 @@ public class PlayerController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         usingCam = true;
         isRotating = false;
+
+        sensSlider.value = camSensitivity;
     }
 
 
@@ -104,7 +110,7 @@ public class PlayerController : MonoBehaviour
 
             if(usingCam) {
                 StartCoroutine(CamRotation(initialCamPos,initialCamRot));            
-                camSensitivity = 0.15f;
+                camSensitivity = newCamSensitivity;
                 Cursor.lockState = CursorLockMode.Locked;
             }
             else {
@@ -143,5 +149,9 @@ public class PlayerController : MonoBehaviour
 
         camX = targetRot.x;
         isRotating = false;
+    }
+
+    public void ChangeSensitivity() {
+        newCamSensitivity = sensSlider.value;
     }
 }
