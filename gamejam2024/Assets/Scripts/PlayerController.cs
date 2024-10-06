@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 initialCamRot;
 
     private bool isRotating;
-    private bool changingSens;
+    public bool inMainMenu;
 
     void Start()
     {
@@ -44,10 +44,22 @@ public class PlayerController : MonoBehaviour
         initialCamPos = cam.transform.localPosition;
         initialCamRot = cam.transform.localRotation.eulerAngles;
         Cursor.lockState = CursorLockMode.Locked;
-        usingCam = true;
+        usingCam = false;
         isRotating = false;
 
         sensSlider.value = camSensitivity;
+        inMainMenu = true;
+        
+        var targetPos = phone.transform.localPosition;
+        targetPos.y = cam.transform.localPosition.y;
+        var targetRot = new Vector3(89,0,0);
+
+        initialCamPos = cam.transform.localPosition;
+        initialCamRot = cam.transform.localRotation.eulerAngles;
+
+        StartCoroutine(CamRotation(targetPos, targetRot));             
+        camSensitivity = 0.01f;
+        Cursor.lockState = CursorLockMode.None;
     }
 
 
@@ -69,6 +81,10 @@ public class PlayerController : MonoBehaviour
 
     public void Move(InputAction.CallbackContext context)
     {
+        if(inMainMenu) {
+            return;
+        }
+
         if (context.started || context.performed) {
             moveInput = context.ReadValue<Vector2>();
         }
@@ -78,6 +94,10 @@ public class PlayerController : MonoBehaviour
     }
 
     public void Jump(InputAction.CallbackContext context) {
+        if(inMainMenu) {
+            return;
+        }
+
         if(context.started || context.performed) {
             isJumping = true;
         }
@@ -105,6 +125,10 @@ public class PlayerController : MonoBehaviour
     }
 
     public void UnlockCam(InputAction.CallbackContext context) {
+        if(inMainMenu) {
+            return;
+        }
+        
         if (context.started) {
             usingCam = !usingCam;
 
@@ -153,5 +177,9 @@ public class PlayerController : MonoBehaviour
 
     public void ChangeSensitivity() {
         newCamSensitivity = sensSlider.value;
+    }
+
+    public void LeaveMM() {
+        inMainMenu = false;
     }
 }
