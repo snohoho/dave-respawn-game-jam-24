@@ -1,0 +1,630 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8184004715058738866
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8516820904810188964}
+  m_Layer: 0
+  m_Name: TeleportParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8516820904810188964
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8184004715058738866}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -71.281105, y: -61.423885, z: -3.0284123}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2091315590744278503}
+  - {fileID: 2975270152767923909}
+  - {fileID: 1102302254387028468}
+  - {fileID: 1341914493780542223}
+  - {fileID: 3817604895410851343}
+  - {fileID: 6954478976191468068}
+  - {fileID: 2713231208654361197}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &534217379439176537
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8516820904810188964}
+    m_Modifications:
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.3215
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 10.602947
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 44.911102
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 61.760277
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -14.121588
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4980895060573770596, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_Name
+      value: Manhole Teleporter (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6097957405765040807, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.063
+      objectReference: {fileID: 0}
+    - target: {fileID: 6097957405765040807, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -20.448
+      objectReference: {fileID: 0}
+    - target: {fileID: 6097957405765040807, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.2371
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+--- !u!4 &2713231208654361197 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+  m_PrefabInstance: {fileID: 534217379439176537}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &830059777590222833
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8516820904810188964}
+    m_Modifications:
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.393
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.7934
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 81.293106
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 61.653885
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 20.484411
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4980895060573770596, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_Name
+      value: Manhole Teleporter
+      objectReference: {fileID: 0}
+    - target: {fileID: 6097957405765040807, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.174
+      objectReference: {fileID: 0}
+    - target: {fileID: 6097957405765040807, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -19.132
+      objectReference: {fileID: 0}
+    - target: {fileID: 6097957405765040807, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.267
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+--- !u!4 &2975270152767923909 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+  m_PrefabInstance: {fileID: 830059777590222833}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1600015806087214907
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8516820904810188964}
+    m_Modifications:
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.2479
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.1058598
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.5476
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 30.390106
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 42.937885
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.501588
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4980895060573770596, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_Name
+      value: Manhole Teleporter (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6097957405765040807, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6097957405765040807, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.701
+      objectReference: {fileID: 0}
+    - target: {fileID: 6097957405765040807, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.163
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+--- !u!4 &3817604895410851343 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+  m_PrefabInstance: {fileID: 1600015806087214907}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3279346788851439808
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8516820904810188964}
+    m_Modifications:
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.2479
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.1058598
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.5476
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 66.991104
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 43.053886
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 28.934412
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4980895060573770596, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_Name
+      value: Manhole Teleporter (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6097957405765040807, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.042
+      objectReference: {fileID: 0}
+    - target: {fileID: 6097957405765040807, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 6097957405765040807, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.335
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+--- !u!4 &1102302254387028468 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+  m_PrefabInstance: {fileID: 3279346788851439808}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3481791137816771131
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8516820904810188964}
+    m_Modifications:
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.2479
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.1058598
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.5476
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 34.732105
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 42.873886
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 37.53541
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4980895060573770596, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_Name
+      value: Manhole Teleporter (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6097957405765040807, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.262
+      objectReference: {fileID: 0}
+    - target: {fileID: 6097957405765040807, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.309
+      objectReference: {fileID: 0}
+    - target: {fileID: 6097957405765040807, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.655
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+--- !u!4 &1341914493780542223 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+  m_PrefabInstance: {fileID: 3481791137816771131}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4596881076854176979
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8516820904810188964}
+    m_Modifications:
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.4667807
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4.5248847
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 97.68111
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 61.65796
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 33.748413
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4980895060573770596, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_Name
+      value: Manhole Teleporter
+      objectReference: {fileID: 0}
+    - target: {fileID: 6097957405765040807, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.0017
+      objectReference: {fileID: 0}
+    - target: {fileID: 6097957405765040807, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -19.886
+      objectReference: {fileID: 0}
+    - target: {fileID: 6097957405765040807, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.2841
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+--- !u!4 &2091315590744278503 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+  m_PrefabInstance: {fileID: 4596881076854176979}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4777751035005872912
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8516820904810188964}
+    m_Modifications:
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.2479
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.1058598
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.5476
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 66.991104
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 43.053886
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 15.418413
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4980895060573770596, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_Name
+      value: Manhole Teleporter (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6097957405765040807, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.003
+      objectReference: {fileID: 0}
+    - target: {fileID: 6097957405765040807, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 6097957405765040807, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.054
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+--- !u!4 &6954478976191468068 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2508151538096486708, guid: 39d4bc12a3b651c4cbc5dc0757ddd7d2, type: 3}
+  m_PrefabInstance: {fileID: 4777751035005872912}
+  m_PrefabAsset: {fileID: 0}
