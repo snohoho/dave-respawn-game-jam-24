@@ -75,9 +75,9 @@ public class PlayerController : MonoBehaviour
         rb.velocity = transform.TransformVector(new Vector3(moveInput.x * speed * Time.deltaTime, 
                                 rb.velocity.y, 
                                 moveInput.y * speed * Time.deltaTime));
-        if(isJumping && canJump) {
+        if(isJumping) {
             rb.velocity += new Vector3(0,jumpHeight,0);
-            canJump = false;
+            isJumping = false;
         }
     }
 
@@ -100,13 +100,12 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        if(context.started || context.performed && canJump) {
-            isJumping = true;
-        }
-        
-        if (context.canceled)
-        {
-            isJumping = false;
+        if(context.started || context.performed) {
+            if (canJump)
+            {
+                canJump = false;
+                isJumping = true;
+            }
         }
     }
 
@@ -201,13 +200,6 @@ public class PlayerController : MonoBehaviour
     public void OnCollisionEnter(Collision other) {
         if(other.gameObject.tag == "Ground") {
             canJump = true;
-        }
-    }
-
-    public void OnCollisionExit(Collision other) {
-        if(other.gameObject.tag == "Ground") {
-            canJump = false;
-            isJumping = true;
         }
     }
 }
