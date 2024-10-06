@@ -37,7 +37,9 @@ public class VoiceLineCatalog : ScriptableObject
         Turning_around_going_home = 27,
         Arriving_home = 28,
         Kinda_fed_up = 29,
-        Completely_fed_up = 30
+        Completely_fed_up = 30,
+        New_Southern_Sewer_Fork = 31,
+        Pool_ending = 32
 
     }
 
