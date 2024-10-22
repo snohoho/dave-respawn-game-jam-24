@@ -1,7 +1,7 @@
 # dave
 **itch.io link**
 
-https://itch.io/jam/respawn-game-jam-fall-2024/rate/3022111
+https://redsio.itch.io/dave
 
 A game made for Florida Poly's Fall 2024 Respawn Game Jam by Jesus De La Rosa, Ethan Davis, Brian Potter, and Alex Hecht.
 
